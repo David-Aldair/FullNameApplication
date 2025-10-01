@@ -15,35 +15,35 @@ public class FullNameApplication {
 
         //this is capturing the answer given for the first name question and storing
         //in the firstName variable
-        String firstName = input.nextLine();
+        String firstName = input.nextLine().trim();
 
         //asking for middle and putting it on a string
         System.out.print("Middle Name: ");
 
         //this is capturing the answer given for the mid name question and storing
         //in the midName variable
-        String midName = input.nextLine();
+        String midName = input.nextLine().trim();
 
         //asking for last name and putting it on a string
         System.out.print("Last name: ");
 
         //this is capturing the answer given for the last name question and storing
         //in the lastName variable
-        String lastName = input.nextLine();
+        String lastName = input.nextLine().trim();
 
         //asking for suffix and putting it on a string
         System.out.print("Suffix: ");
 
         //this is capturing the answer given for the suffix question and storing
         //in the suffix variable
-        String suffix = input.nextLine();
+        String suffix = input.nextLine().trim();
 
         //start a full name variable and start with the first name
         String fullName = firstName;
 
         //if the midName is not empty
-        //then contact the middle initial
-        if(!midName.trim().isEmpty()){
+        //then concat the middle initial
+        if(!midName.trim().isBlank()){
             fullName += " " + midName;
         }
 
