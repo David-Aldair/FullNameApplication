@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class FullNameApplication {
 
     //creating a scanner to take in user input
-    public static Scanner i = new Scanner(System.in);
+    public static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -15,29 +15,28 @@ public class FullNameApplication {
 
         //this is capturing the answer given for the first name question and storing
         //in the firstName variable
-        String firstName = i.nextLine();
-
+        String firstName = input.nextLine();
 
         //asking for middle and putting it on a string
         System.out.print("Middle Name: ");
 
         //this is capturing the answer given for the mid name question and storing
         //in the midName variable
-        String midName = i.nextLine();
+        String midName = input.nextLine();
 
         //asking for last name and putting it on a string
         System.out.print("Last name: ");
 
         //this is capturing the answer given for the last name question and storing
         //in the lastName variable
-        String lastName = i.nextLine();
+        String lastName = input.nextLine();
 
         //asking for suffix and putting it on a string
         System.out.print("Suffix: ");
 
         //this is capturing the answer given for the suffix question and storing
         //in the suffix variable
-        String suffix = i.nextLine();
+        String suffix = input.nextLine();
 
         //start a full name variable and start with the first name
         String fullName = firstName;
